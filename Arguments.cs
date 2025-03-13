@@ -20,7 +20,7 @@ public readonly struct Arguments(string? path, int? maxWidth)
             }
             else
             {
-                path = arg;
+                path = System.IO.Path.GetFullPath(arg);
             }
         }
 
